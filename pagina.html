@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP - Portal para estudiantes</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<style>
+		/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.barra-superior {
+    background: #8B0000;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-superior a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.buscador input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.buscador i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Menú principal */
+.menu-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-principal .logo img {
+    width: 100px;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal ul li {
+    margin: 0 15px;
+}
+
+.menu-principal ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.boton-campus {
+    background: #8B0000;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Sección principal */
+.portada {
+    background: url('https://th.bing.com/th/id/OIP.H061jfBszDyr6fCSHjHtKwHaDb?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.portada h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.boton-rojo {
+    background: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sección de iconos */
+.iconos {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.icono {
+    text-align: center;
+    margin: 0 40px;
+}
+
+.icono i {
+    font-size: 50px;
+    color: gray;
+}
+
+.icono p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+	</style>
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header class="barra-superior">
+        <div class="contenedor-header">
+            <div class="menu-superior">
+                <a href="#">Estudiantes</a>
+                <a href="#">Padres</a>
+                <a href="#">Docentes</a>
+                <a href="#">Internacional</a>
+                <a href="#">Investigación</a>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <i class="fa fa-search"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú principal -->
+    <nav class="menu-principal">
+        <div class="logo">
+            <img src="https://campusvirtualperu.com/wp-content/uploads/2023/11/logo_tup.png" alt="Logo UTP">
+        </div>
+        <ul>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#">ADMISIÓN</a></li>
+            <li><a href="#">PREGRADO</a></li>
+            <li><a href="#">CARRERAS GENTE QUE TRABAJA</a></li>
+            <li><a href="#">POSTGRADO</a></li>
+            <li><a href="#">VIDA UTP</a></li>
+            <li><a href="#" class="boton-campus">CAMPUS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="portada">
+        <h1>Portal para estudiantes</h1>
+        <a href="#" class="boton-rojo">INGRESA AQUÍ AL PORTAL DEL ESTUDIANTE</a>
+    </section>
+
+    <!-- Sección de iconos -->
+    <section class="iconos">
+        <div class="icono">
+            <i class="fa-solid fa-laptop"></i>
+            <p>SAE</p>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-users"></i>
+            <p>Portal de Estudiantes</p>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Correo electrónico</p>
+        </div>
+        <div class="icono">
+            <i class="fa-solid fa-mobile-alt"></i>
+            <p>UTP +</p>
+        </div>
+    </section>
+
+</body>
+</html>
